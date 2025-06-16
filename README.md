@@ -24,7 +24,7 @@ Interface de usuário desenvolvida com **Next.js** e **TailwindCSS** para o Desa
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO_FRONTEND>
+    git clone <URL_DO_REPOSITORIO_FRONTEND>
     cd <PASTA_DO_PROJETO>
     ```
 
