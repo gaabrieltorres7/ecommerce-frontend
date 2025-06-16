@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 E-commerce Challenge - Frontend
 
-## Getting Started
+Interface de usuário desenvolvida com **Next.js** e **TailwindCSS** para o Desafio Técnico da Waving Test.  Este projeto consome a API do backend para criar uma experiência de e-commerce completa e responsiva.
 
-First, run the development server:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Framework:** [Next.js](https://nextjs.org/) (App Router) 
+-   **Gerenciamento de Estado de Servidor:** [TanStack Query (React Query)](https://tanstack.com/query/latest) 
+-   **Estilização:** [TailwindCSS](https://tailwindcss.com/) 
+-   **Biblioteca de Componentes:** [shadcn/ui](https://ui.shadcn.com/) 
+-   **Formulários:** [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
+-   **Chamadas de API:** [Axios](https://axios-http.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏁 Rodando o Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Pré-requisitos
+-   [Node.js](https://nodejs.org/) (versão 18 ou superior)
+-   [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+-   **O backend do projeto precisa estar rodando para que o frontend funcione.**
 
-## Learn More
+### Guia de Instalação
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Clone o repositório:**
+    ```bash
+    git clone <URL_DO_SEU_REPOSITORIO_FRONTEND>
+    cd <PASTA_DO_PROJETO>
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Configure as variáveis de ambiente:**
+    Crie uma cópia do arquivo de exemplo `.env.local.example`.
+    ```bash
+    cp .env.local.example .env.local
+    ```
+    *Certifique-se de que a variável `NEXT_PUBLIC_API_URL` no arquivo `.env.local` aponta para a URL correta do seu backend (ex: `http://localhost:3333`).*
 
-## Deploy on Vercel
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ Pronto! A aplicação estará rodando em `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 Decisões Técnicas
+
+-   **Gerenciamento de Estado:** Optei por usar React Query para todo o estado de servidor, como recomendado pelo desafio, para aproveitar seu cache e lógica de refetching. O estado de cliente (como o estado de autenticação) foi gerenciado com React Context para uma solução leve e nativa.
+-   **Formulários:** A combinação de React Hook Form com Zod (via `@hookform/resolvers`) foi escolhida para criar formulários robustos, com validação de schemas e performance otimizada.
+-   **Componentes:** A escolha pelo `shadcn/ui` permitiu a criação de uma UI consistente e acessível de forma rápida, focando na lógica de negócio.
+---
