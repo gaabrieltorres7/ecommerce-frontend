@@ -38,14 +38,14 @@ Interface de usuário desenvolvida com **Next.js** e **TailwindCSS** para o Desa
     ```bash
     cp .env.local.example .env.local
     ```
-    *Certifique-se de que a variável `NEXT_PUBLIC_API_URL` no arquivo `.env.local` aponta para a URL correta do seu backend (ex: `http://localhost:3333`).*
+    *Certifique-se de que a variável `NEXT_PUBLIC_API_URL` no arquivo `.env.local` aponta para a URL correta do seu backend (ex: `http://localhost:3000`).*
 
 4.  **Inicie o servidor de desenvolvimento:**
     ```bash
     npm run dev
     ```
 
-✅ Pronto! A aplicação estará rodando em `http://localhost:3000`.
+✅ Pronto! A aplicação estará rodando em `http://localhost:4000`.
 
 ## 🧠 Decisões Técnicas
 
