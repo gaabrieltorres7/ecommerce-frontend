@@ -36,9 +36,10 @@ Interface de usuário desenvolvida com **Next.js** e **TailwindCSS** para o Desa
 3.  **Configure as variáveis de ambiente:**
     Crie o seu .env de acordo com o de exemplo `.env.example`.
 
-    - *assim que rodar o frontend, precisará criar produtos e orders para que eles apareçam corretamente.*
-    - *Certifique-se de que a variável `NEXT_PUBLIC_API_URL` no arquivo `.env` aponta para a URL correta do seu backend (ex: `http://localhost:3000`).*
+    - *Assim que rodar o frontend, precisará criar produtos e orders para que eles apareçam corretamente.*
+    - *Após criar um usuário, mude no banco para isAdmin = true (consegue acessar facilmente rodando `npx prisma studio` no backend)
     - *Certifique-se de logar via postman, pegar o token e colocar na variável `NEXT_PUBLIC_ADMIN_TOKEN` no arquivo `.env` para que seja possível acessar rotas de admin (criar produtos, update, delete etc).*
+    - *Certifique-se de que a variável `NEXT_PUBLIC_API_URL` no arquivo `.env` aponta para a URL correta do seu backend (ex: `http://localhost:3000`).*
 
 4.  **Inicie o servidor de desenvolvimento:**
     ```bash
